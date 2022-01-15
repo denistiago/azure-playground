@@ -1,0 +1,13 @@
+---
+ingress:
+  enabled: true
+  hosts:
+    - name: ""
+      path: "/sonarqube"
+  annotations:
+    kubernetes.io/ingress.class: "nginx"
+env:
+  - name: "SONAR_WEB_CONTEXT"
+    value: "/sonarqube"
+livenessProbe.sonarWebContext: "/sonarqube"
+startupProbe.sonarWebContext:	"/sonarqube"
