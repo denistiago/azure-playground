@@ -9,5 +9,9 @@ ingress:
 env:
   - name: "SONAR_WEB_CONTEXT"
     value: "/sonarqube"
-livenessProbe.sonarWebContext: "/sonarqube"
-startupProbe.sonarWebContext:	"/sonarqube"
+livenessProbe:
+  sonarWebContext: "/sonarqube/"
+startupProbe:
+  sonarWebContext:	"/sonarqube/"
+readinessProbe:
+  sonarWebContext:	"/sonarqube/"
