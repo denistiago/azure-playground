@@ -17,7 +17,7 @@ provider "azurerm" {
 
 data "azurerm_kubernetes_cluster" "aks-lab" {
   name                = "aks-lab"
-  resource_group_name = "1-d8f1f6b6-playground-sandbox"
+  resource_group_name = "1-8289e053-playground-sandbox"
 }
 
 provider "helm" {

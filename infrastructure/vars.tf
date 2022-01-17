@@ -5,5 +5,5 @@ variable "resource_group_location" {
 
 variable "resource_group_name" {
   type = string
-  default = "1-d8f1f6b6-playground-sandbox"
+  default = "1-8289e053-playground-sandbox"
 }
